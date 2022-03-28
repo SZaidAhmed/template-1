@@ -12,4 +12,9 @@ app.use(cors({ origin: true, credentials: true }));
 app.use(express.json());
 
 
+app.get('/template', function (req, res) {
+    console.log("first")
+    res.sendFile(path.join(__dirname + '/Hephaestus slider/index.html'))
+});
+
 module.exports = app;
