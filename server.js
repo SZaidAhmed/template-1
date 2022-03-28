@@ -8,6 +8,6 @@ const path = require('path');
 // });
 
 
-app.listen(8003, () => {
+app.listen(process.env.PORT || 8003, () => {
     console.log("server started")
 })
